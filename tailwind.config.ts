@@ -1,7 +1,10 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -17,17 +20,53 @@ const config: Config = {
       fontSize: {
         sm: "14px",
         xs: "12px",
+        medium: "24px",
+        huge: "86px",
+        special: "56px",
+        base: "16px",
+        heading: "18px",
+        el: "160px",
+        l: "44px",
+      },
+      minHeight: {
+        "300": "300px",
       },
       height: {
+        "36": "36px",
         "63": "63px",
+        "73": "73px",
         "50": "50px",
         "40": "40px",
+        "60": "60px",
+        "120": "120px",
+      },
+      maxWidth: {
+        "1000": "1000px",
       },
       width: {
+        "32": "32px",
+        "36": "36px",
         "40": "40px",
+        "60": "60px",
+        "298": "298px",
+        "426": "426px",
+        "482": "482px",
+        "1420": "1420px",
+      },
+      margin: {
+        "5": "5px",
+        "10": "10px",
+        "14": "14px",
+        "36": "36px",
+        "74": "74px",
+        "160": "160px",
+        "46": "46px",
+        "20": "20px",
+        "86": "86px",
       },
       padding: {
         "8": "8px",
+        "9": "9px",
         "15": "15px",
         "16": "16px",
         "18": "18px",
@@ -35,11 +74,37 @@ const config: Config = {
         "23": "23px",
         "28": "28px",
         "41": "41px",
+        "46": "46px",
+        "70": "70px",
+        "108": "108px",
+        "80": "80px",
+        "96": "96px",
+        "110": "110px",
+        "88": "88px",
+        "165": "165px",
+        "170": "170px",
+        "236": "236px",
+      },
+      letterSpacing: {
+        wide: "7px",
       },
       borderRadius: {
         sm: "8px",
         xs: "6px",
+        base: "4px",
+        lg: "30px",
       },
+    },
+    zIndex: {
+      "4": "4",
+    },
+    spacing: {
+      "0": "0",
+      "4": "4px",
+      "20": "20px",
+      "22": "22px",
+      "26": "26px",
+      "16": "16%",
     },
     colors: {
       "white-1": "#ffffff",
@@ -51,9 +116,11 @@ const config: Config = {
       "purple-1": "#9945ff",
       "black-1": "#0b0517",
       "black-2": "#222222",
+      "black-3": "#080412",
       "blue-1": "#171223",
       "blue-2": "#2f1569",
       "pink-1": "#f7d9e0",
+      "pink-2": "#D1ABFF",
       "red-1": "#fd2b3d",
       "red-2": "#ff828d",
     },

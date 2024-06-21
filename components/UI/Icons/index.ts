@@ -1,0 +1,12 @@
+export { ArrowIcon } from "./ArrowIcon";
+export { ArrowBlackIcon } from "./ArrowBlackIcon";
+export { ArrowDisabledIcon } from "./ArrowDisabledIcon";
+export { ArrowGreenIcon } from "./ArrowGreenIcon";
+export { LogoIcon } from "./LogoIcon";
+export { XIcon } from "./XIcon";
+export { InstagramIcon } from "./InstagramIcon";
+export { LinkedinIcon } from "./LinkedinIcon";
+export { TelegramIcon } from "./TelegramIcon";
+export { EmailIcon } from "./EmailIcon";
+export { PersonIcon } from "./PersonIcon";
+export { MessageIcon } from "./MessageIcon";
