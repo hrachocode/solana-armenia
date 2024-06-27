@@ -36,13 +36,13 @@ const JoinUs = () => {
           </span>
         </p>
       </div>
-      <div className="relative">
-        <div className="w-482">
+      <div className="mt-48">
+        <div className="w-482 flex items-center bg-white-2 rounded-sm pr-6">
           <div className="w-298">
             <EmailInput isTransparent isFullWidth placeholder="Email" />
           </div>
-          <div className="absolute right-4 top-4">
-            <PrimaryButton onClick={() => {}}>Subscribe</PrimaryButton>
+          <div>
+            <PrimaryButton onClick={() => { }}>Subscribe</PrimaryButton>
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const MessageInput: FC<MessageInputProps> = ({
       </div>
       <textarea
         className={cn(
-          "bg-white-2 rounded-sm p-20 pl-46 pr-236 text-heading text-blue-2 placeholder-pink-2 resize-none",
+          "bg-white-2 rounded-sm p-20 pl-46 text-heading text-blue-2 placeholder-pink-2 resize-none",
           {
             "h-73": isSizeMedium,
             "h-120": isSizeLarge,

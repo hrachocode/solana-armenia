@@ -31,7 +31,7 @@ const NameInput: FC<NameInputProps> = ({
       <input
         type="text"
         className={cn(
-          "bg-white-2 rounded-sm p-20 pl-46 pr-236 text-heading text-blue-2 placeholder-pink-2",
+          "bg-white-2 rounded-sm p-20 pl-46 text-heading text-blue-2 placeholder-pink-2",
           {
             "h-73": isSizeLarge,
             "h-63": isSizeMedium,
