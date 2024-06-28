@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Round Control";
+  src: url("/fonts/Round-Control.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/Inter-Tight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("/fonts/Press-Start-2P.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --color-white-1: #ffffff;
+  --color-black-1: #0b0517;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: var(--color-white-1);
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--color-black-1);
+  padding: 10px;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
