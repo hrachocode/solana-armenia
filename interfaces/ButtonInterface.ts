@@ -4,6 +4,6 @@ export interface ButtonProps {
   children?: ReactNode;
   isFullWidth?: boolean;
   disabled?: boolean;
-  type?: string;
+  type?: "button" | "submit" | "reset" | undefined;
   onClick: () => void;
 }

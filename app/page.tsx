@@ -1,14 +1,11 @@
 import { FC } from "react";
+import cn from "classnames";
+
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
-
-import heroPicture from "@/assets/hero-bg.png";
-
-import "./styles.scss";
-import * as url from "node:url";
-import cn from "classnames";
 import JoinUs from "@/components/JoinUs";
 import Contact from "@/components/Contact";
+import heroPicture from "@/assets/hero-bg.png";
 
 const Home: FC = () => {
   return (
@@ -27,5 +24,7 @@ const Home: FC = () => {
     </div>
   );
 };
+
+Home.displayName = "Home"
 
 export default Home;
