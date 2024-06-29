@@ -4,7 +4,6 @@ import { FC } from "react";
 import cn from "classnames";
 
 import { ButtonProps } from "@/interfaces/ButtonInterface";
-import { ArrowGreenIcon } from "@/components/UI/Icons";
 
 const IconButton: FC<ButtonProps> = ({
   children,
