@@ -7,15 +7,15 @@ import PrimaryButton from "@/components/UI/Buttons/PrimaryButton";
 import OutlinedButton from "@/components/UI/Buttons/OutlinedButton";
 
 const Hero: FC = () => {
-  const handleClickOnLearn = () => {};
+  const handleClickOnLearn = () => { };
 
-  const handleClickOnCommunity = () => {};
+  const handleClickOnCommunity = () => { };
 
   return (
     <div className="pt-46 pb-108 px-70">
       <p className="w-426 mt-74 select-none">
-        The Armenian community of Solana Blockchain supporters and enthusiasts
-        is meant to guide, help, and mentor people who build for or with the
+        The Armenian community of Solana Blockchain supportersand enthusiasts
+        is meant to guide, help, and mentor peoplewho build for or with the
         Solana blockchain.
       </p>
       <div className="absolute top-16 right-16 ">
@@ -23,7 +23,7 @@ const Hero: FC = () => {
       </div>
 
       <div className="mt-160 z-4">
-        <h1 className="font-round text-el select-none">Solana Armenia</h1>
+        <h1 className="font-round text-el select-none relative">Solana Armenia</h1>
         <div className="mt-46 flex">
           <PrimaryButton onClick={handleClickOnLearn}>
             Learn solana

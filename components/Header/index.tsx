@@ -10,36 +10,38 @@ import Link from "next/link";
 import cn from "classnames";
 
 const Header: FC = () => {
-  const handleClickOnJoin = () => {};
+  const handleClickOnJoin = () => { };
 
   return (
     <header
       className={cn(
-        "flex justify-between items-center pt-46 px-70", // general
-        "", // colors
+        "flex justify-between items-center pt-46 px-70",
       )}
     >
       <Link href="/" className="cursor-pointer">
         <LogoIcon />
       </Link>
       <div>
-        <Link className="" href="">
+        <Link className="" href="#advantages">
           Solana Advantages
         </Link>
-        <Link className="ml-36" href="text-sm">
+        <Link className="ml-36" href="#news">
           News and Events
         </Link>
-        <Link className="ml-36" href="">
+        <Link className="ml-36" href="#projects">
           Projects
         </Link>
-        <Link className="ml-36" href="">
+        <Link className="ml-36" href="#community">
           Community
         </Link>
-        <Link className="ml-36" href="">
+        <Link className="ml-36" href="#contact">
           Contacts
         </Link>
       </div>
-      <SecondaryButton onClick={handleClickOnJoin}>Join us</SecondaryButton>
+      <Link href="#join-us">
+        <SecondaryButton onClick={handleClickOnJoin}>Join us</SecondaryButton>
+
+      </Link>
     </header>
   );
 };
