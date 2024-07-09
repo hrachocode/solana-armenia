@@ -1,14 +1,16 @@
 "use client";
+import { FC } from "react";
 
 import joinUsPicture from "@/assets/join-us-bg.png";
 import personPicture from "@/assets/person.png";
 import EmailInput from "@/components/UI/Inputs/EmailInput";
 import PrimaryButton from "@/components/UI/Buttons/PrimaryButton";
 
-const JoinUs = () => {
+const JoinUs: FC = () => {
   return (
     <div
       className="pt-165 pb-170 p-20 flex flex-col items-center justify-center min-h-300"
+      id="join-us"
       style={{ backgroundImage: `url(${joinUsPicture.src})` }}
     >
       <div className="flex items-center justify-center">

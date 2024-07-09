@@ -7,6 +7,7 @@ const Contact: FC = () => {
   return (
     <div
       className="bg-no-repeat bg-cover bg-center min-h-300 rounded-lg px-80"
+      id="contact"
       style={{ backgroundImage: `url(${contactPicture.src})` }}
     >
       <div className="flex justify-between">

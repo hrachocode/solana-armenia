@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import JoinUs from "@/components/JoinUs";
 import Contact from "@/components/Contact";
 import heroPicture from "@/assets/hero-bg.png";
+import Community from "@/components/Community";
+import Projects from "@/components/Projects";
 
 const Home: FC = () => {
   return (
@@ -19,6 +21,8 @@ const Home: FC = () => {
         <Header />
         <Hero />
       </div>
+      <Projects />
+      <Community />
       <JoinUs />
       <Contact />
     </div>
