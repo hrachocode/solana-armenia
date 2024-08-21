@@ -8,7 +8,7 @@ import PrimaryButton from "@/components/UI/Buttons/PrimaryButton";
 
 const Form: FC = () => {
   return (
-    <form className="w-496 pt-143 pb-80">
+    <form className="lg:w-496 pt-[55px] lg:pt-143 pb-80">
       <NameInput isFullWidth placeholder="Name" />
       <div className="mt-5">
         <EmailInput isFullWidth placeholder="Email" />
@@ -17,7 +17,7 @@ const Form: FC = () => {
         <MessageInput isFullWidth placeholder="Message (optional)" />
       </div>
       <div className="mt-5">
-        <PrimaryButton isFullWidth onClick={() => { }}>
+        <PrimaryButton isFullWidth onClick={() => {}}>
           Submit
         </PrimaryButton>
       </div>

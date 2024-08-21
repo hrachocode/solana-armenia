@@ -1,10 +1,14 @@
-import {FC} from "react";
+import { FC } from "react";
 
-export const LogoIcon: FC = () => {
+interface LogoIconProps {
+  width?: number;
+  height?: number;
+}
+export const LogoIcon: FC<LogoIconProps> = ({ width, height }) => {
   return (
     <svg
-      width="30"
-      height="28"
+      width={width ? width : "30"}
+      height={height ? height : "28"}
       viewBox="0 0 30 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

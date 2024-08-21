@@ -13,7 +13,9 @@ const Home: FC = () => {
   return (
     <div>
       <div
-        className={cn("bg-no-repeat bg-cover bg-center rounded-lg relative")}
+        className={cn(
+          "bg-no-repeat bg-cover bg-center rounded-[20px] md:rounded-lg  relative"
+        )}
         style={{
           backgroundImage: `url(${heroPicture.src})`,
         }}
@@ -29,6 +31,6 @@ const Home: FC = () => {
   );
 };
 
-Home.displayName = "Home"
+Home.displayName = "Home";
 
 export default Home;

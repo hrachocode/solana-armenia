@@ -27,13 +27,13 @@ const JoinUs: FC = () => {
           <img className="w-32" src={personPicture.src} alt="person" />
         </div>
       </div>
-      <div className="mt-46 ">
-        <h4 className="text-medium font-medium uppercase text-center tracking-wide">
+      <div className="mt-31 md:mt-22 lg:mt-46 ">
+        <h4 className="text-[16px] lg:text-medium font-medium uppercase text-center tracking-wide">
           Web3 innovation on Solana’s blockchain
         </h4>
-        <p className="text-huge uppercase font-round max-w-1000 text-center mt-46">
+        <p className="text-[40px] md:text-[48px] lg:text-huge uppercase font-round max-w-1000 text-center mt-46">
           join the community{" "}
-          <span className="font-round text-huge bg-pink-2 text-purple-1 rounded-xs p-8">
+          <span className="font-round text-[40px] md:text-[48px] lg:text-huge bg-pink-2 text-purple-1 rounded-xs p-8">
             of the future
           </span>
         </p>
@@ -43,9 +43,14 @@ const JoinUs: FC = () => {
           <div className="w-298">
             <EmailInput isTransparent isFullWidth placeholder="Email" />
           </div>
-          <div>
-            <PrimaryButton onClick={() => { }}>Subscribe</PrimaryButton>
+          <div className="hidden md:block">
+            <PrimaryButton onClick={() => {}}>Subscribe</PrimaryButton>
           </div>
+        </div>
+        <div className="md:hidden block mt-5">
+          <PrimaryButton isFullWidth onClick={() => {}}>
+            Subscribe
+          </PrimaryButton>
         </div>
       </div>
     </div>

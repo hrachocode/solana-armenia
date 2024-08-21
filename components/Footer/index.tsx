@@ -13,18 +13,20 @@ import { XIcon } from "@/components/UI/Icons";
 
 const Footer: FC = () => {
   return (
-    <footer className="px-80 pt-110 pb-88 flex justify-between">
+    <footer className="md:px-46 lg:px-80  pt-110 pb-88 flex  flex-col md:flex-row items-center justify-between">
       <div>
         <div className="flex items-center">
-          <LogoIcon />
-          <span className="text-l font-round ml-10">Solana Armenia</span>
+          <LogoIcon width={20} height={18} />
+          <span className="text-[20px] md:text-l font-round ml-10">
+            Solana Armenia
+          </span>
         </div>
-        <span className="text-base mt-20 block">
+        <span className="text-[14px] md:text-base mt-20 mb-36 md:mb-0 block">
           © Copyright 2024, All Rights Reserved
         </span>
       </div>
-      <div className="flex ">
-        <div className="flex flex-col">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col text-center md:text-left">
           <Link className="text-sm font-medium" href="">
             Solana Advantages
           </Link>
@@ -34,8 +36,16 @@ const Footer: FC = () => {
           <Link className="mt-14 text-sm font-medium" href="">
             Community
           </Link>
+          <div className="lg:hidden flex flex-col  text-center md:text-left mt-14 ">
+            <Link className="text-sm font-medium" href="">
+              Project
+            </Link>
+            <Link className="mt-14 text-sm font-medium" href="">
+              Contacts
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col ml-86">
+        <div className="hidden lg:flex flex-col md:ml-86 text-center md:text-left mt-14 md:mt-0">
           <Link className="text-sm font-medium" href="">
             Project
           </Link>
@@ -44,7 +54,7 @@ const Footer: FC = () => {
           </Link>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex mt-26 md:mt-0">
         <a href="https://x.com" target="_blank">
           <IconButton onClick={() => {}}>
             <XIcon />
